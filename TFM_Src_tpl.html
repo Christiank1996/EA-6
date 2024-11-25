@@ -33,5 +33,33 @@
 	</head>
 	<body onload="app.start()">
 		<canvas id="canvas" width="500" height="500"></canvas>
+    <div id="text-container">
+        <h1>Legende</h1>
+        <p>K = Animation starten / stoppen</p>
+        <p>O = Ortho-Mode</p>
+        <p>F = Frustum-Mode</p>
+        <p>P = Perspective-Mode</p>
+        <p>C = Orbit-Kamera</p>
+        <p>H = Kamera hoch / runter</p>
+        <p>V = Kamera Fovy</p>
+        <p>X / Y / Z = Rotation des Torus</p>
+    </div>
 	</body>
 </html>
+
+<style>
+	body {
+		margin: 0;
+		display: flex;
+		align-items: flex-start; /* Optional: Text oben ausrichten */
+		height: 100vh; /* Damit alles auf der Höhe des Bildschirms bleibt */
+	}
+
+	#canvas {
+		border: 1px solid black;
+	}
+
+	#text-container {
+		margin-left: 20px; /* Platz zwischen Canvas und Text */
+	}
+</style>
