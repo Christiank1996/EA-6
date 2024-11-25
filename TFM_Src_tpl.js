@@ -12,7 +12,7 @@ var app = ( function() {
 	// Model that is target for user input.
 	var interactiveModel;
 
-	var running = false;
+	var running = true;
 
 	var currentRotation = 0;
 
@@ -45,6 +45,7 @@ var app = ( function() {
 	function start() {
 		init();
 		render();
+		runMode();
 	}
 
 	function init() {
